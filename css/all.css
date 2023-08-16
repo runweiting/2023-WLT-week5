@@ -89,10 +89,10 @@ hr {
   min-height: 100vh;
   padding: 32px;
 }
-.side li > a {
+.side li a {
   color: #212529;
 }
-.side li > a:hover {
+.side li a:hover {
   color: #198754;
 }
 

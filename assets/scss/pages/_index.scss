@@ -4,11 +4,11 @@
   min-width: 296px;
   min-height: 100vh;
   padding: 32px;
-  li > a {
-      color: $gray-900;
-      &:hover {
-          color: $success;
-      }
+  li a {
+    color: $gray-900;
+    &:hover {
+      color: $success;
+    }
   }
 }
 .logo {
