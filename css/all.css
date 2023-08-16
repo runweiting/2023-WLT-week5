@@ -98,7 +98,7 @@ hr {
 
 .logo {
   height: 40px;
-  background: url(../images/logo-ANSWER.svg);
+  background: url(../../images/logo-ANSWER.svg);
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -121,7 +121,7 @@ hr {
   width: 40px;
   height: 40px;
   border-radius: 24px;
-  background: url(../images/andychen.jpeg);
+  background: url(../../images/andychen.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@ hr {
   width: 40px;
   height: 40px;
   border-radius: 24px;
-  background: url(../images/emilywang.jpeg);
+  background: url(../../images/emilywang.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
