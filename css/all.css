@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap");
+/* ======= 01 font-family ======= */
+/* ======= 02 color ============= */
+.gray-100 {
+  color: #F8F9FA;
+}
+
+.gray-400 {
+  color: #CED4DA;
+}
+
+.gray-600 {
+  color: #6C757D;
+}
+
+.gray-900 {
+  color: #212529;
+}
+
+*, *::before, ::after {
+  box-sizing: border-box;
+}
+
+/*{
+outline: 1px solid yellowgreen;
+}
+
+/*--------------------------------*/
+body {
+  font-family: "Lato", "Roboto Mono", monospace, sans-serif;
+  font-size: 1rem;
+  color: #212529;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  display: block;
+  color: #212529;
+  text-decoration: none;
+  line-height: 1;
+}
+a:hover {
+  color: #198754;
+}
+
+code {
+  color: #198754;
+  background-color: #F8F9FA;
+}
+
+hr {
+  margin: 0;
+  opacity: 1;
+}
+
+.font-size-sm {
+  font-size: 0.875rem;
+}
+
+.font-size-xs {
+  font-size: 0.75rem;
+}
+
+/*--------------------------------*/
+.ms-16 {
+  margin-left: 4rem;
+}
+
+/*--------------------------------*/
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+/* ---------- side ---------- */
+.side {
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+  padding: 32px;
+}
+.side li > a {
+  color: #212529;
+}
+.side li > a:hover {
+  color: #198754;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  height: 32px;
+  border-left: 4px solid #198754;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+}
+
+/* ---------- main ---------- */
+.main {
+  margin-left: 296px;
+  padding: 32px;
+}
+
+.list-group {
+  width: 320px;
+}
+.list-group a:hover {
+  background-color: #F8F9FA;
+  color: #212529;
+}
+
+.pagination {
+  margin-bottom: 0;
+}
