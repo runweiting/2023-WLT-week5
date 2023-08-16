@@ -21,8 +21,8 @@
   box-sizing: border-box;
 }
 
-/*{
-outline: 1px solid yellowgreen;
+* {
+  outline: 1px solid yellowgreen;
 }
 
 /*--------------------------------*/
@@ -114,8 +114,7 @@ hr {
   border-radius: 24px;
 }
 
-/* ---------- main ---------- */
-.main {
+v .main {
   margin-left: 296px;
   padding: 32px;
 }
