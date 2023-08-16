@@ -21,8 +21,8 @@
   box-sizing: border-box;
 }
 
-/*{
-outline: 1px solid yellowgreen;
+* {
+  outline: 1px solid yellowgreen;
 }
 
 /*--------------------------------*/
@@ -96,7 +96,16 @@ hr {
   color: #198754;
 }
 
+.logo {
+  height: 40px;
+  background: url(../images/logo-ANSWER.svg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 .nav-link {
+  padding: 0 16px 0 0;
   position: relative;
 }
 
@@ -108,10 +117,15 @@ hr {
   border-left: 4px solid #198754;
 }
 
-.user img {
+.admin {
   width: 40px;
   height: 40px;
   border-radius: 24px;
+  background: url(../images/andychen.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 16px;
 }
 
 /* ---------- main ---------- */
@@ -126,6 +140,17 @@ hr {
 .list-group a:hover {
   background-color: #F8F9FA;
   color: #212529;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  background: url(../images/emilywang.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 16px;
 }
 
 .pagination {

@@ -8,17 +8,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
   </head>
   <body>
     
     <!---------- side ---------->
     <nav class="side d-flex flex-column justify-content-between bg-light">
       <div>
-        <a href="#">
-          <img class="mb-8" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg" alt="logo">
-        </a>
-        <ul class="nav list-unstyled flex-column justify-content-center align-items-start" style="gap: 12px">
+        <a class="logo mb-8" href="#"></a>
+        <ul class="nav list-unstyled flex-column justify-content-center align-items-start" style="gap: 26px">
           <li class="nav-item">
             <a class="nav-link active d-flex align-items-center" href="#">
               <span class="material-icons me-3">
@@ -70,8 +68,8 @@
           </li>
         </ul>
       </div>
-      <div class="user d-flex">
-        <img class="me-3" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="user1-photo">
+      <div class="d-flex">
+        <div class="admin"></div>
         <div class="d-flex flex-column">
           <span class="fw-bold mb-1" style="line-height: 1;">Andy Chen</span>
           <small class="gray-600">andy0401@mail.com</small>
@@ -112,7 +110,7 @@
       </div>
       <!---------- main 中間 ---------->
       <div class="d-flex">
-        <!--------- main 中間-左邊 --------->
+        <!-------- main 中間-左邊 -------->
         <div class="me-3">
           <button class="btn d-flex align-items-center fw-bold gap-2 p-0 mb-1" type="button">
             All (4)
@@ -163,7 +161,7 @@
             </a>
           </div>
         </div>
-        <!--------- main 中間-右邊 --------->
+        <!-------- main 中間-右邊 -------->
         <div>
           <span class="d-block font-size-xs gray-600 text-end" style="line-height: 2.5;">2 comments</span>
           <div class="card mb-3">
@@ -179,8 +177,8 @@
               </a>
             </div>
             <div class="card-body pb-0">
-              <div class="user d-flex">
-                <img class="me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true" alt="user2-photo">
+              <div class="d-flex">
+                <div class="user me-2"></div>
                 <div class="d-flex flex-column mb-3">
                   <span class="fw-bold mb-1">Emily Wang</span>
                   <span class="font-size-xs gray-600" style="line-height: 1;">10:38 AM (4 hours ago)</span>
@@ -199,8 +197,8 @@
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between">
-                <div class="user d-flex">
-                  <img class="me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="user1-photo">
+                <div class="d-flex">
+                  <div class="admin me-2"></div>
                   <div class="d-flex flex-column mb-3">
                     <span class="fw-bold mb-1">Andy Chen (You)</span>
                     <span class="font-size-xs gray-600" style="line-height: 1;">13:24 AM (1 hours ago)</span>

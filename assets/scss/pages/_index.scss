@@ -11,7 +11,15 @@
       }
   }
 }
+.logo {
+  height: 40px;
+  background: url(../images/logo-ANSWER.svg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
 .nav-link {
+  padding: 0 16px 0 0;
   position: relative;
 }
 .nav-link.active::before {
@@ -21,10 +29,15 @@
   height: 32px;
   border-left: 4px solid $success;
 }
-.user img {
+.admin {
   width: 40px;
   height: 40px;
   border-radius: 24px;
+  background: url(../images/andychen.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 16px;
 }
 
 /* ---------- main ---------- */
@@ -38,6 +51,16 @@
       background-color: $gray-100;
       color: $gray-900
   }
+}
+.user {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  background: url(../images/emilywang.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 16px;
 }
 .pagination {
   margin-bottom: 0;
