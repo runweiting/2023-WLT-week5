@@ -21,8 +21,8 @@
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid yellowgreen;
+/*{
+outline: 1px solid yellowgreen;
 }
 
 /*--------------------------------*/
@@ -131,6 +131,7 @@ hr {
 /* ---------- main ---------- */
 .main {
   margin-left: 296px;
+  min-width: 984px;
   padding: 32px;
 }
 
