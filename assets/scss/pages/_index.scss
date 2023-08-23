@@ -43,16 +43,46 @@
 /* ---------- main ---------- */
 .main {
   margin-left: 296px;
-  min-width: 984px;
+  max-width: 984px;
   padding: 32px;
 }
-.list-group {
+
+/* ---------- 修正 all(4)：下拉式選單 ---------- */
+.btn-group {
   width: 320px;
-  a:hover {
-      background-color: $gray-100;
-      color: $gray-900
+  .btn {
+    flex: 0 0 auto;
   }
 }
+.dropdown-menu {
+  width: 100%;
+  &.show {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  a:hover {
+    color: $success;
+  }
+}
+.dropdown-item.active {
+  background-color: $gray-100 !important;
+  color: $gray-900;
+}
+.btn-secondary {
+  background-color: #fff !important;
+  color: $gray-900;
+  border: none;
+  &:hover {
+    color: $success;
+  }
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+
+
+
 .user {
   width: 40px;
   height: 40px;
