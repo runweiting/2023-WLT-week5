@@ -9,18 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <script type="module" crossorigin src="/2023-WLT-week5/assets/index-b48ab731.js"></script>
-    <link rel="stylesheet" href="/2023-WLT-week5/assets/index-2eb4b873.css">
+    <script type="module" crossorigin src="/2023-WLT-week5/assets/index-ecdbe810.js"></script>
+    <link rel="stylesheet" href="/2023-WLT-week5/assets/index-17328c0a.css">
   </head>
   <body>
-    
+
     <!---------- side ---------->
     <nav class="side d-flex flex-column justify-content-between bg-light">
       <div>
         <a class="logo mb-8" href="#"></a>
         <ul class="nav list-unstyled flex-column justify-content-center align-items-start" style="gap: 26px">
           <li class="nav-item">
-            <a class="nav-link active d-flex align-items-center" href="#">
+            <a class="nav-link d-flex align-items-center" href="#">
               <span class="material-icons me-3">
                 assessment
                 </span>
@@ -36,12 +36,11 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center" href="#">
+            <a class="nav-link active d-flex align-items-center" href="#">
               <span class="material-icons me-3">
                 assignment
                 </span>
               <span>Assignment</span>
-              
             </a>
           </li>
           <li class="nav-item">
@@ -78,7 +77,7 @@
         </div>
       </div>
     </nav>
-    <!---------- main 上面 ---------->
+    <!---------- main ---------->
     <main class="main">
       <div class="d-flex justify-content-between align-items-center mb-11">
         <div class="d-flex align-items-center">
@@ -114,55 +113,69 @@
       <div class="d-flex">
         <!-------- main 中間-左邊 -------->
         <div class="me-3">
-          <button class="btn d-flex align-items-center fw-bold gap-2 p-0 mb-1" type="button">
-            All (4)
-            <span class="material-icons link-success">
-              expand_more
-              </span>
-          </button>
-          <div class="list-group">
-            <a href="#" class="list-group-item bg-light p-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="font-size-xs">Chapter Assignment 2</span>
-                <span class="font-size-xs">4 hrs ago</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span class="fw-bold text-truncate">Please check this file…</span>
-                <span class="font-size-xs gray-600">Emily Wang</span>
-              </div>
+
+          <!-------- 修正 all(4)：下拉式選單 -------->
+          <div class="btn-group d-flex align-items-center">
+            <a class="btn btn-secondary d-flex align-items-center fw-bold gap-2 p-0 me-2" href="#">All (4)
             </a>
-            <a href="#" class="list-group-item p-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="font-size-xs">Chapter Assignment 1</span>
-                <span class="font-size-xs">12 hrs ago</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span class="fw-bold text-truncate">My Homework</span>
-                <span class="font-size-xs gray-600">David Xu</span>
-              </div>
-            </a>
-            <a href="#" class="list-group-item p-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="font-size-xs">Final Assignment</span>
-                <span class="font-size-xs">18 hrs ago</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span class="fw-bold text-truncate">Have a problem with this…</span>
-                <span class="font-size-xs gray-600">Tony Wei</span>
-              </div>
-            </a>
-            <a href="#" class="list-group-item p-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="font-size-xs">Final Assignment</span>
-                <span class="font-size-xs">19 hrs ago</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span class="fw-bold text-truncate">Did I do it right?</span>
-                <span class="font-size-xs gray-600">Christina Lin</span>
-              </div>
-            </a>
+            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split p-0" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+              <span class="material-icons link-success">
+                expand_more
+                </span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+              <li >
+                <a class="dropdown-item p-3 active" href="#">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="font-size-xs">Chapter Assignment 2</span>
+                    <span class="font-size-xs">4 hrs ago</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold text-truncate">Please check this file…</span>
+                    <span class="font-size-xs gray-600">Emily Wang</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="list-group-item p-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="font-size-xs">Chapter Assignment 1</span>
+                    <span class="font-size-xs">12 hrs ago</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold text-truncate">My Homework</span>
+                    <span class="font-size-xs gray-600">David Xu</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="list-group-item p-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="font-size-xs">Final Assignment</span>
+                    <span class="font-size-xs">18 hrs ago</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold text-truncate">Have a problem with this…</span>
+                    <span class="font-size-xs gray-600">Tony Wei</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="list-group-item p-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="font-size-xs">Final Assignment</span>
+                    <span class="font-size-xs">19 hrs ago</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold text-truncate">Did I do it right?</span>
+                    <span class="font-size-xs gray-600">Christina Lin</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
         <!-------- main 中間-右邊 -------->
         <div>
           <span class="d-block font-size-xs gray-600 text-end" style="line-height: 2.5;">2 comments</span>
@@ -183,7 +196,7 @@
                 <div class="user me-2"></div>
                 <div class="d-flex flex-column mb-3">
                   <span class="fw-bold mb-1">Emily Wang</span>
-                  <span class="font-size-xs gray-600" style="line-height: 1;">10:38 AM (4 hours ago)</span>
+                  <span class="font-size-xs gray-600" style="line-height: 1;"><time>10:38 AM</time> (4 hours ago)</span>
                 </div>
               </div>
               <p class="card-text font-size-sm ms-5 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br> What is the gap or extra space below image?</p>
@@ -203,7 +216,7 @@
                   <div class="admin me-2"></div>
                   <div class="d-flex flex-column mb-3">
                     <span class="fw-bold mb-1">Andy Chen (You)</span>
-                    <span class="font-size-xs gray-600" style="line-height: 1;">13:24 AM (1 hours ago)</span>
+                    <span class="font-size-xs gray-600" style="line-height: 1;"><time>13:24 AM</time> (1 hours ago)</span>
                   </div>
                 </div>
                 <div class="icon d-flex align-items-start">
@@ -219,9 +232,15 @@
                   </a>
                 </div>
               </div>
-              <p class="card-text font-size-sm ms-5 mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>You can:<br><br>&emsp;• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the middle ) or<br>&emsp;• change the <code>display</code> so it isn’t inline.</p>
+              <p class="card-text font-size-sm ms-5">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>You can:
+                <ul class="ms-5">
+                  <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the middle ) or</li>
+                  <li>change the <code>display</code> so it isn’t inline.</li>
+                </ul>
+              </p>
             </div>
           </div>
+
           <!--------- main 下面 --------->
           <div class="d-flex justify-content-between align-items-center">
             <nav aria-label="Page navigation">
@@ -246,6 +265,8 @@
         </div>
       </div>
     </main>
+
+    
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
