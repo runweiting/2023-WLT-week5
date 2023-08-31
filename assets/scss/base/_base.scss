@@ -34,3 +34,6 @@ hr {
     margin: 0;
     opacity: 1;
 }
+button:focus {
+    box-shadow: none !important;
+}
